@@ -13,10 +13,10 @@ const random = () => {
 const youtube = async (
   automationYoutubeUrl,
   mute,
-  chromePath,
-  tryLoggedIn,
-  username,
-  password
+  chromePath
+  // tryLoggedIn,
+  // username,
+  // password
 ) => {
   console.log("debug1", chromePath, automationYoutubeUrl);
   const browser = await puppeteer.launch({
@@ -27,8 +27,6 @@ const youtube = async (
       "--disable-setuid-sandbox",
       mute === true ? "--mute-audio" : "",
       //   "--disable-background-timer-throttling",
-      //   "--enable-automation",
-      //   "--disable-infobars",
       //   "--disable-gpu",
       //   "--disable-dev-shm-usage",
       //   "--no-first-run",
@@ -37,17 +35,14 @@ const youtube = async (
     ],
     // args: chromium.args,
     defaultViewport: null,
-
     // ignoreHTTPSErrors: true,
-
     executablePath: chromePath || (await chromium.executablePath),
-    // dumpio: true,
   });
   const page = await browser.newPage();
 
   //   await page.setDefaultNavigationTimeout(0);
   //   await page.setDefaultTimeout(0);
-  // console.log("debug2", typeof automationYoutubeUrl);
+
   await page.goto(
     automationYoutubeUrl
     // {
@@ -55,8 +50,6 @@ const youtube = async (
     //   timeout: 0,
     // }
   );
-  // .then((res) => console.log("ok", res))
-  // .catch((res) => console.log("res:", res));
 
   //----------------------------------------------------------------------------------------------------
   //                                            XXXLOGIN--BUTTONXXX
@@ -107,7 +100,6 @@ const youtube = async (
   //     "button.yt-spec-touch-feedback-shape--touch-response.yt-spec-touch-feedback-shape__fill"
   //   );
   await page.waitForXPath('//button[@aria-label="Loop playlist"]');
-  //   console.log("debug5");
   //   let playButton = await page.$x('//button[@title="Play (k)"]');
   let loopPlaylistEnable = await page.$x(
     '//button[@aria-label="Loop playlist"]'
