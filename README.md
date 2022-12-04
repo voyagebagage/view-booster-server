@@ -25,7 +25,7 @@ copy the link HTTPS
 5. Copy the path of the repo
 <img width="761" alt="Capture d’écran 2022-12-04 à 10 16 36" src="https://user-images.githubusercontent.com/81431557/205472560-54c3dfef-a899-4826-830b-7baea00f8f90.png">
 
-6. Write in the terminal ```cd 'your-path-of-the-repo' ``` then press ```enter```
+6. Write in the terminal ```cd 'paste-HERE-your-path-of-the-repo' ``` then press ```enter```
 <img width="564" alt="Capture d’écran 2022-12-04 à 10 15 07" src="https://user-images.githubusercontent.com/81431557/205472528-2d30137b-2845-409a-bdb0-46ff96b34ddb.png">
 
 7. Then ```npm i``` then press ```enter```
