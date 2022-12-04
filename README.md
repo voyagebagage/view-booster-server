@@ -12,10 +12,10 @@ This is the View booster server README :  [Client(PWA) README](https://github.co
 
 1. Clone the repo to your desktop or favorite directory
 2. Copy the path of the repo
-3. ``` cmd + space bar ``` write down ```terminal```
-4. Write in the terminal ```cd 'path-of-the-repo' ```
-5. Then ```npm i```
-6. And last ```nodemon start```, it will be prompt ```"serveur launched"``` and voilà, just use the PWA or browser
+3. ``` cmd + space bar ``` write down ```terminal``` then press ```enter```
+4. Write in the terminal ```cd 'path-of-the-repo' ``` then press ```enter```
+5. Then ```npm i``` then press ```enter```
+6. And last ```nodemon start``` and press ```enter```, it will be prompt ```"serveur launched"``` and voilà, just use the PWA or browser
 
 
 
