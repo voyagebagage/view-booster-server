@@ -30,9 +30,7 @@ copy the link HTTPS
 
 7. Then ```npm i``` then press ```enter```
 8. And last ```nodemon start``` and press ```enter```, it will be prompt ```"serveur launched"``` and voilà, just use the PWA or browser
-
-
-
+9. To shut it down close it or ```control + c```
 
 
 
